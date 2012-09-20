@@ -86,6 +86,7 @@ else
   unless found_geos_
     puts "**** WARNING: Unable to find GEOS headers or GEOS version is too old."
     puts "**** Compiling without GEOS support."
+    raise "WE MUST HAVE GEOS"
   end
   create_makefile('rgeo/geos/geos_c_impl')
 
